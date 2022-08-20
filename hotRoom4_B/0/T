@@ -33,7 +33,7 @@ boundaryField
     }
     wtwalls
     {
-        type            zeroGradient;
+        type            symmetry;
     }
     top
     {

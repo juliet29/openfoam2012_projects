@@ -36,8 +36,7 @@ boundaryField
     }
     wtwalls
     {
-        type            epsilonWallFunction;
-        value           uniform 0.01;
+        type            symmetry;
     }
     top
     {

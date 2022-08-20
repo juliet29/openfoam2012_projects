@@ -35,8 +35,8 @@ FoamFile
     }
     wtwalls
     {
-        type            wall;
-        physicalType    wall;
+        type            symmetry;
+        physicalType    symmetry;
         inGroups        1(wall);
         nFaces          1444;
         startFace       27631;

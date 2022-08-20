@@ -36,9 +36,7 @@ boundaryField
     }
     wtwalls
     {
-        type            fixedFluxPressure;
-        gradient        uniform 0;
-        value           uniform 0;
+        type            symmetry;
     }
     top
     {

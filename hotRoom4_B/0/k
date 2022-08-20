@@ -35,8 +35,7 @@ boundaryField
     }
     wtwalls
     {
-        type            kqRWallFunction;
-        value           uniform 0.1;
+        type            symmetry;
     }
     top
     {

@@ -36,9 +36,7 @@ boundaryField
     }
     wtwalls
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        value           uniform 0;
+        type            symmetry;
     }
     top
     {

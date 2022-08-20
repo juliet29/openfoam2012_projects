@@ -34,7 +34,7 @@ boundaryField
     }
     wtwalls
     {
-        type            noSlip;
+        type            symmetry;
     }
     top
     {
