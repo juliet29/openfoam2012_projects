@@ -29,7 +29,8 @@ boundaryField
     }
     ground
     {
-        type            nutkWallFunction;
+        type            atmNutkWallFunction;
+        #include        "ABLConditions"
         value           uniform 0;
     }
     wtwalls

@@ -24,8 +24,9 @@ boundaryField
 {
     inlet
     {
-        type            kqRWallFunction;
-        value           uniform 0.1;
+        type            atmBoundaryLayerInletK;
+        #include        "ABLConditions"
+        value           uniform 0;
     }
     ground
     {
@@ -38,8 +39,9 @@ boundaryField
     }
     top
     {
-        type            kqRWallFunction;
-        value           uniform 0.1;
+        type            atmBoundaryLayerInletK;
+        #include        "ABLConditions"
+        value           uniform 0;
     }
     outlet
     {

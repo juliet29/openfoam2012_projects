@@ -24,13 +24,11 @@ boundaryField
 {
     inlet
     {
-        type            calculated;
-        value           uniform 0;
+        type            zeroGradient;
     }
     ground
     {
-        type            calculated;
-        value           uniform 0;
+        type            zeroGradient;
     }
     wtwalls
     {
@@ -42,7 +40,7 @@ boundaryField
     }
     outlet
     {
-        type            calculated;
+        type            fixedValue;
         value           uniform 0;
     }
     defaultFaces
