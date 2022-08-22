@@ -24,8 +24,9 @@ boundaryField
 {
     inlet
     {
-        type            fixedValue;
-        value           uniform (0 0 0);
+      type            atmBoundaryLayerInletVelocity;
+      #include        "ABLConditions"
+      value           uniform (0 0 0);
     }
     ground
     {
@@ -37,11 +38,12 @@ boundaryField
     }
     top
     {
-        type            noSlip;
+      type            fixedValue;
+      value           uniform (7.9 0 0);
     }
     outlet
     {
-        type            noSlip;
+        type            zeroGradient;
     }
     defaultFaces
     {
