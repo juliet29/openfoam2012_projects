@@ -24,15 +24,13 @@ boundaryField
 {
     inlet
     {
-        type            atmBoundaryLayerInletEpsilon;
-        #include        "ABLConditions"
-        value           uniform 0;
+        type            epsilonWallFunction;
+        value           uniform 0.01;
     }
     ground
     {
-        type            atmEpsilonWallFunction;
-        z0              uniform 0.02;
-        value           uniform 0;
+        type            epsilonWallFunction;
+        value           uniform 0.01;
     }
     wtwalls
     {
@@ -40,13 +38,13 @@ boundaryField
     }
     top
     {
-        type            atmBoundaryLayerInletEpsilon;
-        #include        "ABLConditions"
-        value           uniform 0;
+        type            epsilonWallFunction;
+        value           uniform 0.01;
     }
     outlet
     {
-        type            zeroGradient;
+        type            epsilonWallFunction;
+        value           uniform 0.01;
     }
     defaultFaces
     {
