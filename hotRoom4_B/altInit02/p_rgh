@@ -11,7 +11,7 @@ FoamFile
     format      ascii;
     class       volScalarField;
     location    "0";
-    object      p;
+    object      p_rgh;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -24,12 +24,14 @@ boundaryField
 {
     inlet
     {
-        type            calculated;
+        type            fixedFluxPressure;
+        gradient        uniform 0;
         value           uniform 0;
     }
     ground
     {
-        type            calculated;
+        type            fixedFluxPressure;
+        gradient        uniform 0;
         value           uniform 0;
     }
     wtwalls
@@ -38,24 +40,33 @@ boundaryField
     }
     top
     {
-        type            zeroGradient;
+        type            fixedFluxPressure;
+        gradient        uniform 0;
+        value           uniform 0;
     }
     outlet
     {
-        type            calculated;
+        type            fixedFluxPressure;
+        gradient        uniform 0;
         value           uniform 0;
     }
     defaultFaces
     {
-        type            zeroGradient;
+        type            fixedFluxPressure;
+        gradient        uniform 0;
+        value           uniform 0;
     }
     buildingFaces_master
     {
-        type            zeroGradient;
+        type            fixedFluxPressure;
+        gradient        uniform 0;
+        value           uniform 0;
     }
     buildingFaces_slave
     {
-        type            zeroGradient;
+        type            fixedFluxPressure;
+        gradient        uniform 0;
+        value           uniform 0;
     }
 }
 
