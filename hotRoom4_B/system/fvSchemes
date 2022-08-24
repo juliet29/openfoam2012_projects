@@ -29,10 +29,10 @@ divSchemes
 {
     default         none;
 
-    div(phi,U)      bounded Gauss upwind;
-    div(phi,T)      bounded Gauss upwind;
-    div(phi,k)      bounded Gauss upwind;
-    div(phi,epsilon) bounded Gauss upwind;
+    div(phi,U)      bounded Gauss linearUpwind grad(U);
+    div(phi,T)      bounded Gauss linearUpwind grad(T);
+    div(phi,k)      bounded Gauss linearUpwind grad(k);
+    div(phi,epsilon) bounded Gauss linearUpwind grad(epsilon);
     div((nuEff*dev2(T(grad(U))))) Gauss linear;
 }
 

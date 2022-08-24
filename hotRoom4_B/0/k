@@ -30,8 +30,8 @@ boundaryField
     }
     ground
     {
-        type            kqRWallFunction;
-        value           uniform 0.1;
+        type            zeroGradient;
+        // value           uniform 0.1;
     }
     wtwalls
     {

@@ -11,7 +11,7 @@ FoamFile
     format      ascii;
     class       volScalarField;
     location    "0";
-    object      alphat;
+    object      Phi;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -22,31 +22,39 @@ internalField   uniform 0;
 
 boundaryField
 {
-    wtwalls
-    {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        value           uniform 0;
-    }
     inlet
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        value           uniform 0;
+        type            zeroGradient;
+    }
+    ground
+    {
+        type            zeroGradient;
+    }
+    wtwalls
+    {
+        type            symmetry;
+    }
+    top
+    {
+        type            zeroGradient;
     }
     outlet
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
+        type            fixedValue;
         value           uniform 0;
     }
-    building
+    defaultFaces
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        value           uniform 0;
+        type            zeroGradient;
     }
-
+    buildingFaces_master
+    {
+        type            zeroGradient;
+    }
+    buildingFaces_slave
+    {
+        type            zeroGradient;
+    }
 }
 
 

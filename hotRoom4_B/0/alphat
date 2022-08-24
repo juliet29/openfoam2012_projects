@@ -24,9 +24,9 @@ boundaryField
 {
     inlet
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        value           uniform 0;
+        type            zeroGradient;
+        // Prt             0.85;
+        // value           uniform 0;
     }
     ground
     {
@@ -40,35 +40,35 @@ boundaryField
     }
     top
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        value           uniform 0;
+        type            zeroGradient;
+        // Prt             0.85;
+        // value           uniform 0;
     }
     outlet
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        value           uniform 0;
+        type            zeroGradient;
+        // Prt             0.85;
+        // value           uniform 0;
     }
     defaultFaces
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        value           uniform 0;
+        type            zeroGradient;
+        // Prt             0.85;
+        // value           uniform 0;
     }
     buildingFaces_master
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        coupleGroup     buildingFaces;
-        value           uniform 0;
+        type            zeroGradient;
+        // Prt             0.85;
+        // coupleGroup     buildingFaces;
+        // value           uniform 0;
     }
     buildingFaces_slave
     {
-        type            alphatJayatillekeWallFunction;
-        Prt             0.85;
-        coupleGroup     buildingFaces;
-        value           uniform 0;
+        type            zeroGradient;
+        // Prt             0.85;
+        // coupleGroup     buildingFaces;
+        // value           uniform 0;
     }
 }
 
