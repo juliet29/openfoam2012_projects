@@ -1,0 +1,205 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /home/dockeruser/OpenFOAM/OpenFOAM-v2012/platforms/linux64GccDPInt32Opt/bin/buoyantBoussinesqSimpleFoam
+Date   : Aug 25 2022
+Time   : 18:20:52
+Host   : 761029dbf954
+PID    : 3940
+I/O    : uncollated
+Case   : /foamdata/of2012_projects/hotRoom4C_topVel
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: convergence criteria
+    field p_rgh	 tolerance 0.01
+    field U	 tolerance 0.0001
+    field T	 tolerance 0.01
+    field "(k|epsilon|omega)"	 tolerance 0.001
+
+Reading thermophysical properties
+
+Reading field T
+
+Reading field p_rgh
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+kEpsilonCoeffs
+{
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    sigmaEps        1.11;
+    C3              0;
+    sigmak          1;
+}
+
+Reading field alphat
+
+
+Reading g
+
+Reading hRef
+Calculating field g.h
+
+No MRF models present
+
+Radiation model not active: radiationProperties not found
+Selecting radiationModel none
+No finite volume options present
+
+Starting time loop
+
+--> FOAM Warning :
+    From simpleFunctionObject::simpleFunctionObject
+    in file simpleFunctionObject/simpleFunctionObject.C at line 141
+    'outputControlMode' not found in temperature
+Assuming: timeStep
+--> FOAM Warning :
+    From simpleFunctionObject::simpleFunctionObject
+    in file simpleFunctionObject/simpleFunctionObject.C at line 150
+    'outputInterval' not found in temperature
+Assuming: 1
+--> FOAM Warning :
+    From timelineFunctionObject::timelineFunctionObject
+    in file timelineFunctionObject/timelineFunctionObject.C at line 94
+    No entry 'writeStartTime' in "/foamdata/of2012_projects/hotRoom4C_topVel/system/controlDict.functions.temperature". Assuming 'no'
+swak4Foam: Setting default mesh
+--> FOAM Warning :
+    From simpleFunctionObject::simpleFunctionObject
+    in file simpleFunctionObject/simpleFunctionObject.C at line 141
+    'outputControlMode' not found in velocity
+Assuming: timeStep
+--> FOAM Warning :
+    From simpleFunctionObject::simpleFunctionObject
+    in file simpleFunctionObject/simpleFunctionObject.C at line 150
+    'outputInterval' not found in velocity
+Assuming: 1
+--> FOAM Warning :
+    From timelineFunctionObject::timelineFunctionObject
+    in file timelineFunctionObject/timelineFunctionObject.C at line 94
+    No entry 'writeStartTime' in "/foamdata/of2012_projects/hotRoom4C_topVel/system/controlDict.functions.velocity". Assuming 'no'
+--> FOAM Warning :
+    From simpleFunctionObject::simpleFunctionObject
+    in file simpleFunctionObject/simpleFunctionObject.C at line 141
+    'outputControlMode' not found in epsilon
+Assuming: timeStep
+--> FOAM Warning :
+    From simpleFunctionObject::simpleFunctionObject
+    in file simpleFunctionObject/simpleFunctionObject.C at line 150
+    'outputInterval' not found in epsilon
+Assuming: 1
+--> FOAM Warning :
+    From timelineFunctionObject::timelineFunctionObject
+    in file timelineFunctionObject/timelineFunctionObject.C at line 94
+    No entry 'writeStartTime' in "/foamdata/of2012_projects/hotRoom4C_topVel/system/controlDict.functions.epsilon". Assuming 'no'
+--> FOAM Warning :
+    From simpleFunctionObject::simpleFunctionObject
+    in file simpleFunctionObject/simpleFunctionObject.C at line 141
+    'outputControlMode' not found in tke
+Assuming: timeStep
+--> FOAM Warning :
+    From simpleFunctionObject::simpleFunctionObject
+    in file simpleFunctionObject/simpleFunctionObject.C at line 150
+    'outputInterval' not found in tke
+Assuming: 1
+--> FOAM Warning :
+    From timelineFunctionObject::timelineFunctionObject
+    in file timelineFunctionObject/timelineFunctionObject.C at line 94
+    No entry 'writeStartTime' in "/foamdata/of2012_projects/hotRoom4C_topVel/system/controlDict.functions.tke". Assuming 'no'
+Time = 1
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 0.00263128, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 1, Final residual = 0.00957243, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.00310706, No Iterations 1
+DILUPBiCGStab:  Solving for T, Initial residual = 0.469829, Final residual = 0.0156384, No Iterations 1
+DICPCG:  Solving for p_rgh, Initial residual = 1, Final residual = 0.0091871, No Iterations 688
+time step continuity errors : sum local = 256.881, global = -0.287166, cumulative = -0.287166
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.994783, Final residual = 0.0285866, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 1, Final residual = 0.0387316, No Iterations 1
+ExecutionTime = 4.02 s  ClockTime = 5 s
+
+    functionObjects::CourantNo CourantNo writing field: Co
+Expression temperature : swak4Foam: Allocating new repository for sampledMeshes
+swak4Foam: Allocating new repository for sampledGlobalVariables
+ min=300 weightedQuantile0.1=300 weightedAverage=300 weightedQuantile0.9=300 max=300
+Expression velocity :  min=-276.855 weightedQuantile0.1=-22.6747 weightedAverage=2.9723 weightedQuantile0.9=28.4368 max=106.466
+Expression epsilon :  min=0.0112494 weightedQuantile0.1=0.126999 weightedAverage=0.648232 weightedQuantile0.9=1.28557 max=27.4949
+Expression tke :  min=0.0312282 weightedQuantile0.1=1.33773 weightedAverage=4.99959 weightedQuantile0.9=9.60004 max=130.142
+Time = 2
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.163896, Final residual = 0.00296447, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.162166, Final residual = 0.00284341, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.167322, Final residual = 0.00272497, No Iterations 1
+DILUPBiCGStab:  Solving for T, Initial residual = 0.416216, Final residual = 0.0234424, No Iterations 1
+DICPCG:  Solving for p_rgh, Initial residual = 1.01843e-11, Final residual = 1.01843e-11, No Iterations 0
+time step continuity errors : sum local = 48.911, global = -0.362155, cumulative = -0.649321
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.938481, Final residual = 0.0117945, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.976641, Final residual = 0.0124735, No Iterations 1
+ExecutionTime = 5.41 s  ClockTime = 7 s
+
+    functionObjects::CourantNo CourantNo writing field: Co
+Expression temperature :  min=300 weightedQuantile0.1=300 weightedAverage=300 weightedQuantile0.9=300 max=300
+Expression velocity :  min=-212.227 weightedQuantile0.1=-17.6437 weightedAverage=2.72079 weightedQuantile0.9=23.0881 max=173.988
+Expression epsilon :  min=0.00498305 weightedQuantile0.1=13.3621 weightedAverage=57.3089 weightedQuantile0.9=110.431 max=6674.38
+Expression tke :  min=0.0511144 weightedQuantile0.1=72.508 weightedAverage=282.184 weightedQuantile0.9=538.799 max=20387.6
+Time = 3
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.275328, Final residual = 0.000280152, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.276562, Final residual = 0.000165787, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.318749, Final residual = 0.000323726, No Iterations 1
+DILUPBiCGStab:  Solving for T, Initial residual = 0.418437, Final residual = 0.00307554, No Iterations 1
+DICPCG:  Solving for p_rgh, Initial residual = 6.25864e-12, Final residual = 6.25864e-12, No Iterations 0
+time step continuity errors : sum local = 35.2282, global = -0.656117, cumulative = -1.30544
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.155798, Final residual = 0.000119718, No Iterations 1
+bounding epsilon, min: -1236.38 max: 667648 average: 559.124
+DILUPBiCGStab:  Solving for k, Initial residual = 0.375193, Final residual = 0.016796, No Iterations 1
+ExecutionTime = 6.72 s  ClockTime = 9 s
+
+    functionObjects::CourantNo CourantNo writing field: Co
+Expression temperature :  min=300 weightedQuantile0.1=300 weightedAverage=300 weightedQuantile0.9=300 max=300
+Expression velocity :  min=-2242.46 weightedQuantile0.1=-14.2038 weightedAverage=2.51381 weightedQuantile0.9=18.6737 max=132.85
+Expression epsilon :  min=0.0218005 weightedQuantile0.1=104.134 weightedAverage=359.369 weightedQuantile0.9=937.202 max=667648
+Expression tke :  min=0.0257642 weightedQuantile0.1=1002.51 weightedAverage=772.275 weightedQuantile0.9=9022.58 max=1.1972e+06
+Time = 4
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.320824, Final residual = 0.00338478, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.478109, Final residual = 0.00637627, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.342659, Final residual = 0.00342567, No Iterations 1
+DILUPBiCGStab:  Solving for T, Initial residual = 0.372907, Final residual = 0.0115015, No Iterations 1
+DICPCG:  Solving for p_rgh, Initial residual = 2.98673e-12, Final residual = 2.98673e-12, No Iterations 0
+time step continuity errors : sum local = 28.1546, global = -1.04124, cumulative = -2.34667
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.494316, Final residual = 0.0121127, No Iterations 1
+bounding epsilon, min: -477.776 max: 4.24649e+06 average: 4304.14
+DILUPBiCGStab:  Solving for k, Initial residual = 0.628144, Final residual = 0.0188496, No Iterations 1
+ExecutionTime = 7.97 s  ClockTime = 10 s
+
+    functionObjects::CourantNo CourantNo writing field: Co
+Expression temperature :  min=300 weightedQuantile0.1=300 weightedAverage=300 weightedQuantile0.9=300 max=300
+Expression velocity :  min=-4267 weightedQuantile0.1=-10.1629 weightedAverage=2.09168 weightedQuantile0.9=16.7582 max=492.53
+Expression epsilon :  min=0.00865854 weightedQuantile0.1=1012.63 weightedAverage=2708.93 weightedQuantile0.9=9113.71 max=4.24649e+06
+Expression tke :  min=0.00781188 weightedQuantile0.1=1012.98 weightedAverage=3883.81 weightedQuantile0.9=9116.85 max=3.67845e+06
+End
+

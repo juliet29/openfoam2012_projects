@@ -23,9 +23,8 @@ boundaryField
 {
     inlet
     {
-        type            atmBoundaryLayerInletEpsilon;
-        #include        "ABLConditions"
-        value           uniform 0;
+        type            fixedValue;
+        value           uniform 14.855;
     }
     outlet
     {
@@ -33,15 +32,13 @@ boundaryField
     }
     top
     {
-        type            atmBoundaryLayerInletEpsilon;
-        #include        "ABLConditions"
-        value           uniform 0;
+        type            epsilonWallFunction;
+        value           uniform 14.855;
     }
     bottom
     {
-        type            atmEpsilonWallFunction;
-        z0              uniform 0.02;
-        value           uniform 0;
+        type            epsilonWallFunction;
+        value           uniform 14.855;
     }
     side01
     {

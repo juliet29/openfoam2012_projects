@@ -50,19 +50,18 @@ boundaryField
     }
     defaultFaces
     {
-        type            atmEpsilonWallFunction;
-        z0              uniform 0.02;
+        type            epsilonWallFunction;
         value           uniform 0;
     }
     buildingFaces_master
     {
         type            epsilonWallFunction;
-        value           uniform 1;
+        value           uniform 0;
     }
     buildingFaces_slave
     {
         type            epsilonWallFunction;
-        value           uniform 1;
+        value           uniform 0;
     }
 }
 

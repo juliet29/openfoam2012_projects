@@ -1,0 +1,36 @@
+Thu Aug 25 14:20:16 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 14:20:20 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 14:20:42 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 14:21:06 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 14:25:16 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 14:25:30 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 14:51:03 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 14:51:13 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 14:53:11 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 14:53:26 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 14:54:44 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 14:55:00 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 14:56:02 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 14:56:17 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 15:10:27 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 15:10:41 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ending 
+Thu Aug 25 15:12:59 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 15:13:12 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ending 
+Thu Aug 25 15:18:30 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 15:18:45 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 15:20:25 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 15:20:39 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ending 
+Thu Aug 25 15:21:54 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 15:22:07 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ending 
+Thu Aug 25 20:31:38 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=cleanRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 20:31:44 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=cleanRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ending 
+Thu Aug 25 20:33:52 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=cleanRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 20:36:53 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=cleanRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ending 
+Thu Aug 25 20:37:21 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear aut  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 20:37:28 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 20:40:31 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 20:49:31 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 20:52:59 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 21:02:17 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ended 
+Thu Aug 25 21:02:42 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=cleanRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Starting 
+Thu Aug 25 21:30:47 2022 by dockeruser in 2d5918da8f71 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=cleanRun auto  | with cwd /foamdata/of2012_projects/hotRoom6C_ABL  |  Ending 

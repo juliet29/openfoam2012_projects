@@ -49,8 +49,8 @@ boundaryField
     }
     defaultFaces
     {
-        type            atmNutkWallFunction;
-        #include        "ABLConditions"
+        type            nutkWallFunction;
+        coupleGroup     buildingFaces;
         value           uniform 0;
     }
     buildingFaces_master

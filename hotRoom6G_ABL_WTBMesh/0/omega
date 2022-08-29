@@ -37,8 +37,8 @@ boundaryField
     }
     bottom
     {
-        type            atmOmegaWallFunction;
-        value           uniform 0;
+        type            omegaWallFunction;
+        value           $internalField;
     }
     side01
     {

@@ -1,0 +1,49 @@
+temperature {
+theTitle "Temperature";
+ylabel "Temperature";
+expr "Expression temperature :  min=(.+) weightedQuantile0.1=(.+)weightedAverage=(.+) weightedQuantile0.9=(.+) max=(.+)"; 
+titles (
+min
+weightedQuantile0.1
+average
+weightedQuantile0.9
+max );
+}
+
+velocity {
+theTitle "Ux";
+ylabel "Ux";
+expr "Expression velocity :  min=(.+) weightedQuantile0.1=(.+)weightedAverage=(.+) weightedQuantile0.9=(.+) max=(.+)"; 
+titles (
+min
+weightedQuantile0.1
+average
+weightedQuantile0.9
+max );
+}
+
+epsilon {
+theTitle "Epsilon";
+ylabel "Epsilon";
+expr "Expression epsilon :  min=(.+) weightedQuantile0.1=(.+)weightedAverage=(.+) weightedQuantile0.9=(.+) max=(.+)"; 
+titles (
+min
+weightedQuantile0.1
+average
+weightedQuantile0.9
+max );
+}
+
+TKE {
+theTitle "TKE";
+ylabel "TKE";
+expr "Expression tke :  min=(.+) weightedQuantile0.1=(.+)weightedAverage=(.+) weightedQuantile0.9=(.+) max=(.+)"; 
+titles (
+min
+weightedQuantile0.1
+average
+weightedQuantile0.9
+max );
+}
+
+

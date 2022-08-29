@@ -38,8 +38,7 @@ boundaryField
     }
     bottom
     {
-        type            atmNutkWallFunction;
-        #include        "ABLConditions"
+        type            nutkWallFunction;
         value           uniform 0;
     }
     side01
