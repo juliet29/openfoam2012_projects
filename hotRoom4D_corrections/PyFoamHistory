@@ -1,0 +1,31 @@
+Thu Aug 25 17:19:18 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:20:40 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ended 
+Thu Aug 25 17:25:46 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:26:08 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ended 
+Thu Aug 25 17:26:27 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:26:33 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ended 
+Thu Aug 25 17:26:49 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:28:12 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ended 
+Thu Aug 25 17:31:51 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:33:14 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=firstRun auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ending 
+Thu Aug 25 17:35:20 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:35:50 2022 by dockeruser in 761029dbf954 :Application: pyFoamRunner.py --clear auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:36:34 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:37:58 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ending 
+Thu Aug 25 17:38:49 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:40:13 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ending 
+Thu Aug 25 17:41:31 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:42:55 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ending 
+Thu Aug 25 17:43:04 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:43:23 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ending 
+Thu Aug 25 17:43:30 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:43:41 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ending 
+Thu Aug 25 17:59:38 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 17:59:51 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ending 
+Thu Aug 25 18:20:52 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Starting 
+Thu Aug 25 18:21:03 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=preBreak auto  | with cwd /foamdata/of2012_projects/hotRoom4C_topVel  |  Ending 
+Mon Aug 29 17:16:27 2022 by dockeruser in ae62a90841c4 :Application: pyFoamCloneCase.py hotRoom4C_topVel/ hotRoom4D_2  | with cwd /foamdata/of2012_projects  |  Cloned to hotRoom4D_2 
+Mon Aug 29 17:27:05 2022 by dockeruser in ae62a90841c4 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=run0 auto  | with cwd /foamdata/of2012_projects/hotRoom4D_corrections  |  Starting 
+Mon Aug 29 17:27:22 2022 by dockeruser in ae62a90841c4 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=run0 auto  | with cwd /foamdata/of2012_projects/hotRoom4D_corrections  |  Ending 
+Mon Aug 29 17:29:55 2022 by dockeruser in ae62a90841c4 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=run0 auto  | with cwd /foamdata/of2012_projects/hotRoom4D_corrections  |  Starting 
+Mon Aug 29 17:30:42 2022 by dockeruser in ae62a90841c4 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=run0 auto  | with cwd /foamdata/of2012_projects/hotRoom4D_corrections  |  Ending 
