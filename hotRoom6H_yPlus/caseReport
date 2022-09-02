@@ -1,0 +1,72 @@
+
+Size of the case
+================
+
+
+====== ======
+Faces  215900
+Points 76041 
+Cells  70000 
+====== ======
+
+
+Table of boundary conditions for t = 0
+======================================
+
+
+========== =================== ============================= ============ ======== ======== ===================
+..         bottom              inlet                         outlet       side01   side02   top                
+---------- ------------------- ----------------------------- ------------ -------- -------- -------------------
+Patch Type wall                patch                         patch        symmetry symmetry wall               
+Length     1400                1000                          1000         3500     3500     1400               
+========== =================== ============================= ============ ======== ======== ===================
+Co         zeroGradient        zeroGradient                  zeroGradient symmetry symmetry zeroGradient       
+U          noSlip              atmBoundaryLayerInletVelocity zeroGradient symmetry symmetry fixedValue         
+epsilon    epsilonWallFunction fixedValue                    zeroGradient symmetry symmetry epsilonWallFunction
+k          kqRWallFunction     fixedValue                    zeroGradient symmetry symmetry kqRWallFunction    
+nut        atmNutWallFunction  calculated                    zeroGradient symmetry symmetry atmNutWallFunction 
+omega      omegaWallFunction   fixedValue                    zeroGradient symmetry symmetry omegaWallFunction  
+p          zeroGradient        zeroGradient                  fixedValue   symmetry symmetry zeroGradient       
+yPlus      calculated          calculated                    calculated   symmetry symmetry calculated         
+========== =================== ============================= ============ ======== ======== ===================
+
+
+Internal value of fields for t = 0
+==================================
+
+
+======= ==================================
+Name    Value                             
+======= ==================================
+Co      nonuniform List<scalar> 70000 (...
+U       uniform (0 0 0)                   
+epsilon uniform 1.29e-07                  
+k       uniform 0.000938                  
+nut     uniform 0.00153                   
+omega   uniform 0.612                     
+p       uniform 0                         
+yPlus   uniform 0                         
+======= ==================================
+
+
+Linear Solvers
+==============
+
+
+==== ====== ============== =============
+Name Solver Abs. Tolerance Relative Tol.
+==== ====== ============== =============
+p    GAMG   1e-06          0.1          
+==== ====== ============== =============
+
+
+Relaxation
+==========
+
+
+============ ======
+Name         Factor
+============ ======
+equations: U 0.9   
+============ ======
+

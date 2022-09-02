@@ -5,22 +5,50 @@
 |   \\  /    A nd           | Website:  www.openfoam.com                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
-
-singleGraph
+FoamFile
 {
-    start   (0.01 0 1.5);
-    end     (0.01 3 1.5);
-    fields  (U);
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      nuTilda;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-    #includeEtc "caseDicts/postProcessing/graphs/sampleDict.cfg"
+dimensions      [0 2 -1 0 0 0 0];
 
-    setConfig
+internalField   uniform 0;
+
+boundaryField
+{
+    inlet
     {
-        axis    y;
+        type            fixedValue;
+        value           uniform 0;
     }
 
-    // Must be last entry
-    #includeEtc "caseDicts/postProcessing/graphs/graph.cfg"
-}
+    outlet
+    {
+        type            zeroGradient;
+    }
+
+    top
+    {
+        type            zeroGradient;
+    }
+
+    bottom
+    {
+        type            zeroGradient;
+    }
+
+    side01
+    {
+        type            symmetry;
+    }
+
+    side02
+    {
+        type            symmetry;
+    }
 
 // ************************************************************************* //

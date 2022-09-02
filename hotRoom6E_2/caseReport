@@ -1,0 +1,74 @@
+
+Size of the case
+================
+
+
+====== =====
+Faces  62400
+Points 22491
+Cells  20000
+====== =====
+
+
+Table of boundary conditions for t = 0
+======================================
+
+
+=============== =================== ============================= ============ ======== ======== ===================
+..              bottom              inlet                         outlet       side01   side02   top                
+--------------- ------------------- ----------------------------- ------------ -------- -------- -------------------
+Patch Type      wall                patch                         patch        symmetry symmetry wall               
+Length          1000                400                           400          1000     1000     1000               
+=============== =================== ============================= ============ ======== ======== ===================
+U               noSlip              atmBoundaryLayerInletVelocity zeroGradient symmetry symmetry fixedValue         
+epsilon         epsilonWallFunction fixedValue                    zeroGradient symmetry symmetry epsilonWallFunction
+k               kqRWallFunction     fixedValue                    zeroGradient symmetry symmetry kqRWallFunction    
+nut             nutkWallFunction    calculated                    zeroGradient symmetry symmetry nutkWallFunction   
+omega           omegaWallFunction   fixedValue                    zeroGradient symmetry symmetry omegaWallFunction  
+p               zeroGradient        zeroGradient                  fixedValue   symmetry symmetry zeroGradient       
+vorticity       calculated          calculated                    calculated   symmetry symmetry calculated         
+wallShearStress calculated          calculated                    calculated   symmetry symmetry calculated         
+yPlus           calculated          calculated                    calculated   symmetry symmetry calculated         
+=============== =================== ============================= ============ ======== ======== ===================
+
+
+Internal value of fields for t = 0
+==================================
+
+
+=============== ==================================
+Name            Value                             
+=============== ==================================
+U               uniform (0 0 0)                   
+epsilon         uniform 14.855                    
+k               uniform 0.375                     
+nut             uniform 0                         
+omega           uniform 440.15                    
+p               uniform 0                         
+vorticity       nonuniform List<vector> 20000 (...
+wallShearStress uniform (0 0 0)                   
+yPlus           uniform 0                         
+=============== ==================================
+
+
+Linear Solvers
+==============
+
+
+==== ====== ============== =============
+Name Solver Abs. Tolerance Relative Tol.
+==== ====== ============== =============
+p    GAMG   1e-06          0.1          
+==== ====== ============== =============
+
+
+Relaxation
+==========
+
+
+============ ======
+Name         Factor
+============ ======
+equations: U 0.9   
+============ ======
+

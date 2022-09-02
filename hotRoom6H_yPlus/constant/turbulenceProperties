@@ -5,22 +5,28 @@
 |   \\  /    A nd           | Website:  www.openfoam.com                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
-
-singleGraph
+FoamFile
 {
-    start   (0.01 0 1.5);
-    end     (0.01 3 1.5);
-    fields  (U);
-
-    #includeEtc "caseDicts/postProcessing/graphs/sampleDict.cfg"
-
-    setConfig
-    {
-        axis    y;
-    }
-
-    // Must be last entry
-    #includeEtc "caseDicts/postProcessing/graphs/graph.cfg"
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      turbulenceProperties;
 }
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+simulationType RAS;
+
+RAS
+{
+    // Tested with kEpsilon, realizableKE, kOmega, kOmegaSST,
+    // ShihQuadraticKE, LienCubicKE.
+    RASModel        kEpsilon;
+
+    turbulence      on;
+
+    printCoeffs     on;
+}
+
 
 // ************************************************************************* //
