@@ -1,0 +1,50 @@
+velocity {
+theTitle "Ux";
+ylabel "Ux";
+expr "Expression velocity :  min=(.+) weightedQuantile0.1=(.+)weightedAverage=(.+) weightedQuantile0.9=(.+) max=(.+)"; 
+titles (
+min
+weightedQuantile0.1
+average
+weightedQuantile0.9
+max );
+}
+
+pressure {
+theTitle "Pressure";
+ylabel "Pressure";
+expr "Expression pressure :  min=(.+) weightedQuantile0.1=(.+)weightedAverage=(.+) weightedQuantile0.9=(.+) max=(.+)"; 
+titles (
+min
+weightedQuantile0.1
+average
+weightedQuantile0.9
+max );
+}
+
+nut {
+theTitle "nut";
+ylabel "nut";
+expr "Expression nut :  min=(.+) weightedQuantile0.1=(.+)weightedAverage=(.+) weightedQuantile0.9=(.+) max=(.+)"; 
+titles (
+min
+weightedQuantile0.1
+average
+weightedQuantile0.9
+max );
+}
+
+
+k {
+theTitle "k";
+ylabel "k";
+expr "Expression omega :  min=(.+) weightedQuantile0.1=(.+)weightedAverage=(.+) weightedQuantile0.9=(.+) max=(.+)"; 
+titles (
+min
+weightedQuantile0.1
+average
+weightedQuantile0.9
+max );
+}
+
+

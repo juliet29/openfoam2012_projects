@@ -39,7 +39,7 @@ blocks
         1
         (
             (0.16 0.2 1.06)    // % y-dir, % cells, expansion
-            (0.84 0.8 1)    // % y-dir, % cells, expansion (y direction is vertical)
+            (0.84 0.8 1)    // % y-dir, % cells, expansion
         )
         1
 
