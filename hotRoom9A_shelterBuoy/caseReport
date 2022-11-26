@@ -1,0 +1,76 @@
+
+Size of the case
+================
+
+
+====== ======
+Faces  408950
+Points 143136
+Cells  133000
+====== ======
+
+
+Table of boundary conditions for t = 0
+======================================
+
+
+========== ============================= ============================= ============ ======== ======== ======================
+..         bottom                        inlet                         outlet       side01   side02   top                   
+---------- ----------------------------- ----------------------------- ------------ -------- -------- ----------------------
+Patch Type wall                          patch                         patch        symmetry symmetry wall                  
+Length     1400                          1900                          1900         6650     6650     1400                  
+========== ============================= ============================= ============ ======== ======== ======================
+T          zeroGradient                  fixedValue                    slip         symmetry symmetry slip                  
+T.orig     fixedValue                    fixedValue                    zeroGradient symmetry symmetry fixedValue            
+U          noSlip                        atmBoundaryLayerInletVelocity zeroGradient symmetry symmetry fixedShearStress      
+alphat     alphatJayatillekeWallFunction calculated                    calculated   symmetry symmetry slip                  
+epsilon    atmEpsilonWallFunction        atmBoundaryLayerInletEpsilon  zeroGradient symmetry symmetry atmEpsilonWallFunction
+k          kqRWallFunction               atmBoundaryLayerInletK        zeroGradient symmetry symmetry slip                  
+nut        atmNutkWallFunction           calculated                    calculated   symmetry symmetry nutkWallFunction      
+p          calculated                    calculated                    calculated   symmetry symmetry slip                  
+p_rgh      fixedFluxPressure             fixedFluxPressure             fixedValue   symmetry symmetry slip                  
+========== ============================= ============================= ============ ======== ======== ======================
+
+
+Internal value of fields for t = 0
+==================================
+
+
+======= ===============
+Name    Value          
+======= ===============
+T       uniform 300    
+T.orig  uniform 300    
+U       uniform (0 0 0)
+alphat  uniform 0      
+epsilon uniform 0.033  
+k       uniform 0.4    
+nut     uniform 0      
+p       uniform 0      
+p_rgh   uniform 0      
+======= ===============
+
+
+Linear Solvers
+==============
+
+
+===== ====== ============== =============
+Name  Solver Abs. Tolerance Relative Tol.
+===== ====== ============== =============
+p_rgh PCG    1e-08          0.01         
+===== ====== ============== =============
+
+
+Relaxation
+==========
+
+
+============= ======
+Name          Factor
+============= ======
+fields: p_rgh 0.7   
+equations: U  0.3   
+equations: T  0.5   
+============= ======
+

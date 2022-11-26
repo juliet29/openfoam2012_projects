@@ -1,2 +1,0 @@
-Thu Aug 25 21:47:07 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=cleanRun auto  | with cwd /foamdata/of2012_projects/hotRoom6G_ABL_WTBMesh  |  Starting 
-Thu Aug 25 21:47:45 2022 by dockeruser in 761029dbf954 :Application: pyFoamPlotRunner.py --clear --progress --auto --hardcopy --prefix=cleanRun auto  | with cwd /foamdata/of2012_projects/hotRoom6G_ABL_WTBMesh  |  Ending 

@@ -1,0 +1,499 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /home/dockeruser/OpenFOAM/OpenFOAM-v2012/platforms/linux64GccDPInt32Opt/bin/buoyantBoussinesqSimpleFoam
+Date   : Sep 19 2022
+Time   : 20:03:00
+Host   : c905b725f41c
+PID    : 9880
+I/O    : uncollated
+Case   : /foamdata/of2012_projects/hotRoom9A_shelterBuoy
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0.5
+
+
+SIMPLE: convergence criteria
+    field p_rgh	 tolerance 0.01
+    field U	 tolerance 0.0001
+    field T	 tolerance 0.01
+    field "(k|epsilon|omega)"	 tolerance 0.001
+
+Reading thermophysical properties
+
+Reading field T
+
+Reading field p_rgh
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model RNGkEpsilon
+RAS
+{
+    RASModel        RNGkEpsilon;
+    kEpsilonCoeffs
+    {
+        sigmaEps        1.1;
+    }
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.0845;
+    C1              1.42;
+    C2              1.68;
+    C3              0;
+    sigmak          0.71942;
+    sigmaEps        0.71942;
+    eta0            4.38;
+    beta            0.012;
+}
+
+Reading field alphat
+
+
+Reading g
+
+Reading hRef
+Calculating field g.h
+
+No MRF models present
+
+Radiation model not active: radiationProperties not found
+Selecting radiationModel none
+No finite volume options present
+
+Starting time loop
+
+Reading set description:
+    x_0m
+    x_10m
+    x_20m
+
+--> FOAM Warning : 
+Unknown function type swakExpression
+
+Valid function types :
+
+84
+(
+AMIWeights
+BilgerMixtureFraction
+CourantNo
+Curle
+DESModelRegions
+LambVector
+Lambda2
+MachNo
+ObukhovLength
+PecletNo
+Q
+STDMD
+XiReactionRate
+add
+blendingFactor
+columnAverage
+components
+continuityError
+ddt
+ddt2
+derivedFields
+div
+enstrophy
+externalCoupled
+extractEulerianParticles
+fieldAverage
+fieldCoordinateSystemTransform
+fieldExtents
+fieldMinMax
+fieldValueDelta
+flowType
+flux
+fluxSummary
+grad
+heatTransferCoeff
+histogram
+interfaceHeight
+limitFields
+log
+mag
+magSqr
+mapFields
+momentum
+momentumError
+multiply
+nearWallFields
+particleDistribution
+patchProbes
+pow
+pressure
+probes
+processorField
+proudmanAcousticPower
+psiReactionThermoMoleFractions
+psiReactionsSensitivityAnalysis
+psiSpecieReactionRates
+randomise
+readFields
+reference
+regionSizeDistribution
+rhoReactionThermoMoleFractions
+rhoReactionsSensitivityAnalysis
+rhoSpecieReactionRates
+setFlow
+sets
+stabilityBlendingFactor
+streamFunction
+streamLine
+subtract
+surfaceDistance
+surfaceFieldValue
+surfaceInterpolate
+surfaces
+turbulenceFields
+valueAverage
+volFieldValue
+vorticity
+wallBoundedStreamLine
+wallHeatFlux
+wallShearStress
+writeCellCentres
+writeCellVolumes
+yPlus
+zeroGradient
+)
+
+
+
+    From static Foam::autoPtr<Foam::functionObject> Foam::functionObject::New(const Foam::word&, const Foam::Time&, const Foam::dictionary&)
+    in file db/functionObjects/functionObject/functionObject.C at line 122.
+--> loading function object 'velocity'
+
+--> FOAM Warning : 
+Unknown function type swakExpression
+
+Valid function types :
+
+84
+(
+AMIWeights
+BilgerMixtureFraction
+CourantNo
+Curle
+DESModelRegions
+LambVector
+Lambda2
+MachNo
+ObukhovLength
+PecletNo
+Q
+STDMD
+XiReactionRate
+add
+blendingFactor
+columnAverage
+components
+continuityError
+ddt
+ddt2
+derivedFields
+div
+enstrophy
+externalCoupled
+extractEulerianParticles
+fieldAverage
+fieldCoordinateSystemTransform
+fieldExtents
+fieldMinMax
+fieldValueDelta
+flowType
+flux
+fluxSummary
+grad
+heatTransferCoeff
+histogram
+interfaceHeight
+limitFields
+log
+mag
+magSqr
+mapFields
+momentum
+momentumError
+multiply
+nearWallFields
+particleDistribution
+patchProbes
+pow
+pressure
+probes
+processorField
+proudmanAcousticPower
+psiReactionThermoMoleFractions
+psiReactionsSensitivityAnalysis
+psiSpecieReactionRates
+randomise
+readFields
+reference
+regionSizeDistribution
+rhoReactionThermoMoleFractions
+rhoReactionsSensitivityAnalysis
+rhoSpecieReactionRates
+setFlow
+sets
+stabilityBlendingFactor
+streamFunction
+streamLine
+subtract
+surfaceDistance
+surfaceFieldValue
+surfaceInterpolate
+surfaces
+turbulenceFields
+valueAverage
+volFieldValue
+vorticity
+wallBoundedStreamLine
+wallHeatFlux
+wallShearStress
+writeCellCentres
+writeCellVolumes
+yPlus
+zeroGradient
+)
+
+
+
+    From static Foam::autoPtr<Foam::functionObject> Foam::functionObject::New(const Foam::word&, const Foam::Time&, const Foam::dictionary&)
+    in file db/functionObjects/functionObject/functionObject.C at line 122.
+--> loading function object 'pressure'
+
+--> FOAM Warning : 
+Unknown function type swakExpression
+
+Valid function types :
+
+84
+(
+AMIWeights
+BilgerMixtureFraction
+CourantNo
+Curle
+DESModelRegions
+LambVector
+Lambda2
+MachNo
+ObukhovLength
+PecletNo
+Q
+STDMD
+XiReactionRate
+add
+blendingFactor
+columnAverage
+components
+continuityError
+ddt
+ddt2
+derivedFields
+div
+enstrophy
+externalCoupled
+extractEulerianParticles
+fieldAverage
+fieldCoordinateSystemTransform
+fieldExtents
+fieldMinMax
+fieldValueDelta
+flowType
+flux
+fluxSummary
+grad
+heatTransferCoeff
+histogram
+interfaceHeight
+limitFields
+log
+mag
+magSqr
+mapFields
+momentum
+momentumError
+multiply
+nearWallFields
+particleDistribution
+patchProbes
+pow
+pressure
+probes
+processorField
+proudmanAcousticPower
+psiReactionThermoMoleFractions
+psiReactionsSensitivityAnalysis
+psiSpecieReactionRates
+randomise
+readFields
+reference
+regionSizeDistribution
+rhoReactionThermoMoleFractions
+rhoReactionsSensitivityAnalysis
+rhoSpecieReactionRates
+setFlow
+sets
+stabilityBlendingFactor
+streamFunction
+streamLine
+subtract
+surfaceDistance
+surfaceFieldValue
+surfaceInterpolate
+surfaces
+turbulenceFields
+valueAverage
+volFieldValue
+vorticity
+wallBoundedStreamLine
+wallHeatFlux
+wallShearStress
+writeCellCentres
+writeCellVolumes
+yPlus
+zeroGradient
+)
+
+
+
+    From static Foam::autoPtr<Foam::functionObject> Foam::functionObject::New(const Foam::word&, const Foam::Time&, const Foam::dictionary&)
+    in file db/functionObjects/functionObject/functionObject.C at line 122.
+--> loading function object 'nut'
+
+--> FOAM Warning : 
+Unknown function type swakExpression
+
+Valid function types :
+
+84
+(
+AMIWeights
+BilgerMixtureFraction
+CourantNo
+Curle
+DESModelRegions
+LambVector
+Lambda2
+MachNo
+ObukhovLength
+PecletNo
+Q
+STDMD
+XiReactionRate
+add
+blendingFactor
+columnAverage
+components
+continuityError
+ddt
+ddt2
+derivedFields
+div
+enstrophy
+externalCoupled
+extractEulerianParticles
+fieldAverage
+fieldCoordinateSystemTransform
+fieldExtents
+fieldMinMax
+fieldValueDelta
+flowType
+flux
+fluxSummary
+grad
+heatTransferCoeff
+histogram
+interfaceHeight
+limitFields
+log
+mag
+magSqr
+mapFields
+momentum
+momentumError
+multiply
+nearWallFields
+particleDistribution
+patchProbes
+pow
+pressure
+probes
+processorField
+proudmanAcousticPower
+psiReactionThermoMoleFractions
+psiReactionsSensitivityAnalysis
+psiSpecieReactionRates
+randomise
+readFields
+reference
+regionSizeDistribution
+rhoReactionThermoMoleFractions
+rhoReactionsSensitivityAnalysis
+rhoSpecieReactionRates
+setFlow
+sets
+stabilityBlendingFactor
+streamFunction
+streamLine
+subtract
+surfaceDistance
+surfaceFieldValue
+surfaceInterpolate
+surfaces
+turbulenceFields
+valueAverage
+volFieldValue
+vorticity
+wallBoundedStreamLine
+wallHeatFlux
+wallShearStress
+writeCellCentres
+writeCellVolumes
+yPlus
+zeroGradient
+)
+
+
+
+    From static Foam::autoPtr<Foam::functionObject> Foam::functionObject::New(const Foam::word&, const Foam::Time&, const Foam::dictionary&)
+    in file db/functionObjects/functionObject/functionObject.C at line 122.
+--> loading function object 'tke'
+
+Time = 0.6
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.223762, Final residual = 0.000337935, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0666002, Final residual = 0.000198997, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.099047, Final residual = 0.000342862, No Iterations 1
+DILUPBiCGStab:  Solving for T, Initial residual = 0.023224, Final residual = 0.000227375, No Iterations 1
+DICPCG:  Solving for p_rgh, Initial residual = 0.0317611, Final residual = 0.000273831, No Iterations 148
+time step continuity errors : sum local = 6.01535e-05, global = 1.40602e-07, cumulative = -4.4454e-06
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0260218, Final residual = 0.000136141, No Iterations 1
+bounding epsilon, min: -98.1611 max: 16204.1 average: 354.074
+DILUPBiCGStab:  Solving for k, Initial residual = 0.0570107, Final residual = 0.000520759, No Iterations 1
+bounding k, min: -4.97391 max: 99.9695 average: 3.92682
+ExecutionTime = 49.02 s  ClockTime = 53 s
+
+    functionObjects::CourantNo CourantNo writing field: Co
