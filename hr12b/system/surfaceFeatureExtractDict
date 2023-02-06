@@ -1,0 +1,64 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      surfaceFeatureExtractDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+_surfaceExtract
+{
+    // How to obtain raw features (extractFromFile || extractFromSurface)
+    extractionMethod    extractFromSurface;
+
+    // Mark edges whose adjacent surface normals are at an angle less
+    // than includedAngle as features
+    // - 0  : selects no edges
+    // - 180: selects all edges
+    includedAngle       180; //JNU: change to 180 according to Joszef Nagy VOF tutorial 
+
+    // Write options
+
+    // Write features to obj format for postprocessing
+    writeObj            yes;
+}
+
+roomBackFace.stl{
+	$_surfaceExtract;
+}
+
+roomSide01.stl{
+	$_surfaceExtract;
+}
+
+roomSide02.stl{
+	$_surfaceExtract;
+}
+
+roomWindowFace.stl{
+	$_surfaceExtract;
+}
+
+roomTopFace.stl{
+	$_surfaceExtract;
+}
+
+roomBottom.stl{
+	$_surfaceExtract;
+}
+
+//- Remove temp from dictionary so it doesn't think it is a surface
+#remove _surfaceExtract
+
+
+
+
+// ************************************************************************* //

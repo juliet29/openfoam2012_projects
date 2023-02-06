@@ -1,0 +1,16 @@
+solid roomBackFace
+facet normal 0.000000 1.000000 0.000000
+outer loop
+vertex 0.423684 4.012621 3.657600
+vertex 5.073684 4.012621 0.000000
+vertex 0.423684 4.012621 0.000000
+endloop
+endfacet
+facet normal 0.000000 1.000000 0.000000
+outer loop
+vertex 5.073684 4.012621 0.000000
+vertex 0.423684 4.012621 3.657600
+vertex 5.073684 4.012621 3.657600
+endloop
+endfacet
+endsolid roomBackFace
