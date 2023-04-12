@@ -14,47 +14,118 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-
-samples
+sampleDict
 {
-    type                    sets;
-    libs                    (sampling);
-    setFormat               raw;
-    interpolationScheme     cell;
-    fields                  (U k epsilon nut T);
-    writeControl            writeTime;
 
-    //  #includeEtc "caseDicts/postProcessing/graphs/sampleDict.cfg"
-    //  #includeEtc "caseDicts/postProcessing/graphs/graph.cfg"
+type surfaces;
 
-    sets
-    (
-        x_0m    // inlet patch face centres
-        {
-            type        face;
-            axis        y;
-            start       (0 0 1.5);
-            end         (0 3 1.5);
-        }
-        x_10m // half way through 
-        {
-            type        face;
-            axis        y;
-            start       (10 0 1.5);
-            end         (10 3 1.5);
-        }
-        x_20m // outlet 
-        {
-            type        face;
-            axis        y;
-            start       (20 0 1.5);
-            end         (20 3 1.5);
-        }
+interpolationScheme cellPoint;
+surfaceFormat raw;
+fields  (Co);
+surfaces
+(
+    side01
+    {
+    type patch;
+    patches ( ".*side01.*" );
+    }
 
-       
-    );
-     
+    side02
+    {
+    type patch;
+    patches ( ".*side02.*" );
+    }
+
+    bottom
+    {
+    type patch;
+    patches ( ".*bottom.*" );
+    }
+    // top
+    // {
+    // type patch;
+    // patches ( ".*room.*" );
+    // }
+    // inlet
+    // {
+    // type patch;
+    // patches ( ".*room.*" );
+    // }
+
+
+
+
+roomBac
+ {
+    type patch;
+    patches ( ".*room.*" );
+    // interpolate true;
+ // Optional: whether to leave as faces (=default) or triangulate
+ }
+
+);
+
+// surfaces
+// (
+// surfacename
+// {
+//         type plane;
+        
+//         planeType pointAndNormal;
+
+//         pointAndNormalDict {
+//             basePoint (0.1 0.1 0.1);
+//             normalVector (0.1 0 0);
+//         }
+// }
+
+
+
+//  );
+
 }
 
+
+
+// samples
+// {
+//     type                    sets;
+//     libs                    (sampling);
+//     setFormat               raw;
+//     interpolationScheme     cell;
+//     fields                  (U k epsilon nut T);
+//     writeControl            writeTime;
+
+//     //  #includeEtc "caseDicts/postProcessing/graphs/sampleDict.cfg"
+//     //  #includeEtc "caseDicts/postProcessing/graphs/graph.cfg"
+
+//     sets
+//     (
+//         x_0m    // inlet patch face centres
+//         {
+//             type        face;
+//             axis        y;
+//             start       (0 0 1.5);
+//             end         (0 3 1.5);
+//         }
+//         x_10m // half way through 
+//         {
+//             type        face;
+//             axis        y;
+//             start       (10 0 1.5);
+//             end         (10 3 1.5);
+//         }
+//         x_20m // outlet 
+//         {
+//             type        face;
+//             axis        y;
+//             start       (20 0 1.5);
+//             end         (20 3 1.5);
+//         }
+
+       
+//     );
+     
+// }
 
 // *********************************************************************** //

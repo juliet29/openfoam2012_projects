@@ -1,0 +1,96 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+convertToMeters 1;
+
+vertices
+(
+    (                  0                  0                  0 )  // 0 v0-y
+    (              26.61                  0                  0 )  // 1 v1-y
+    (              26.61              14.64                  0 )  // 2 v1+y
+    (                  0              14.64                  0 )  // 3 v0+y
+    (              26.61                  0              76.85 )  // 4 v2-y
+    (                  0                  0              76.85 )  // 5 v3-y
+    (                  0              14.64              76.85 )  // 6 v3+y
+    (              26.61              14.64              76.85 )  // 7 v2+y
+);
+
+edges
+(
+);
+
+blocks
+(
+    hex (0 1 2 3 5 4 7 6) b0 (52 150 29) simpleGrading (1 1 1)  // b0 (v0-y v1-y v1+y v0+y v3-y v2-y v2+y v3+y)
+);
+
+boundary
+(
+    side01
+    {
+        type symmetry;
+        faces
+        (
+            (0 5 6 3)  // f-b0-w (v0-y v3-y v3+y v0+y)
+        );
+    }
+    side02
+    {
+        type symmetry;
+        faces
+        (
+            (1 2 7 4)  // f-b0-n (v1-y v1+y v2+y v2-y)
+        );
+    }
+    bottom
+    {
+        type wall;
+        faces
+        (
+            (0 1 4 5)  // f-b0-s (v0-y v1-y v2-y v3-y)
+        );
+    }
+    top
+    {
+        type patch;
+        faces
+        (
+            (2 3 6 7)  // f-b0-n (v1+y v0+y v3+y v2+y)
+        );
+    }
+    inlet
+    {
+        type patch;
+        faces
+        (
+            (0 3 2 1)  // f-b0-b (v0-y v0+y v1+y v1-y)
+        );
+    }
+    outlet
+    {
+        type patch;
+        faces
+        (
+            (5 4 7 6)  // f-b0-t (v3-y v2-y v2+y v3+y)
+        );
+    }
+);
+
+mergePatchPairs
+(
+);
+
+// ************************************************************************* //

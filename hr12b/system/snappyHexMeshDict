@@ -16,7 +16,7 @@ FoamFile
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 // Which of the steps to run
-castellatedMesh true;
+castellatedMesh false;
 snap            true;
 addLayers       false;
 
@@ -34,10 +34,10 @@ geometry
         type triSurfaceMesh;
         name roomBackFace;
     }
-    roomBottom.stl
+    roomBottomFace.stl
     {
         type triSurfaceMesh;
-        name roomBottom;
+        name roomBottomFace;
     }
     roomSide01.stl
     {
@@ -90,7 +90,7 @@ castellatedMeshControls
     // Number of buffer layers between different levels.
     // 1 means normal 2:1 refinement restriction, larger means slower
     // refinement.
-    nCellsBetweenLevels 1;
+    nCellsBetweenLevels 3; //TH: 3, og: 1
 
 
 
@@ -108,27 +108,27 @@ castellatedMeshControls
 
         {
             file "roomBackFace.eMesh";
-            level 0;//JN: refinement defined by features          
+            level 1;//JN: refinement defined by features          
         }
         {
-            file "roomBottom.eMesh";
-            level 0;//JN: refinement defined by features          
+            file "roomBottomFace.eMesh";
+            level 1;//JN: refinement defined by features          
         }
         {
             file "roomSide01.eMesh";
-            level 0;//JN: refinement defined by features          
+            level 1;//JN: refinement defined by features          
         }
         {
             file "roomSide02.eMesh";
-            level 0;//JN: refinement defined by features          
+            level 1;//JN: refinement defined by features          
         }
         {
             file "roomTopFace.eMesh";
-            level 0;//JN: refinement defined by features          
+            level 1;//JN: refinement defined by features          
         }
         {
             file "roomWindowFace.eMesh";
-            level 0;//JN: refinement defined by features          
+            level 1;//JN: refinement defined by features          
         }
     );
 
@@ -154,32 +154,32 @@ castellatedMeshControls
         roomBackFace
         {
             // Surface-wise min and max refinement level
-            level (0 0);
+            level (1 1);
         }
-        roomBottom
+        roomBottomFace
         {
             // Surface-wise min and max refinement level
-            level (0 0);
+            level (1 1);
         }
         roomSide01
         {
             // Surface-wise min and max refinement level
-            level (0 0);
+            level (2 2);
         }
         roomSide02
         {
             // Surface-wise min and max refinement level
-            level (0 0);
+            level (2 2);
         }
         roomTopFace
         {
             // Surface-wise min and max refinement level
-            level (0 0);
+            level (1 1);
         }
         roomWindowFace
         {
             // Surface-wise min and max refinement level
-            level (0 0);
+            level (3 3);
         }
     }
 
@@ -201,10 +201,10 @@ castellatedMeshControls
 
     refinementRegions
     {
-        refinementBox
+        "room.*"
         {
-            mode inside;
-            levels ((1 0));
+            mode distance;
+            levels ((1 2) (2 1));
         }
     }
 
@@ -238,10 +238,10 @@ snapControls
     //- Relative distance for points to be attracted by surface feature point
     //  or edge. True distance is this factor times local
     //  maximum edge length.
-    tolerance 2.0;
+    tolerance 0.25;
 
     //- Number of mesh displacement relaxation iterations.
-    nSolveIter 300;
+    nSolveIter 100;
 
     //- Maximum number of snapping relaxation iterations. Should stop
     //  before upon reaching a correct mesh.
@@ -276,7 +276,7 @@ addLayersControls
     // Per final patch (so not geometry!) the layer information
     layers
     {
-        "box_.*"
+        "room.*"
         {
             nSurfaceLayers 1;
         }
